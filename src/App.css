@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;0,700;0,800;1,300&display=swap');
+
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+  padding-bottom: 150px;
+  color: #192736;
+ }
+
+ .text-dark{
+   color: #192736 !important;
+ }
+
+.container{
+  padding-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-green{
+  color: #4CC88A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-purple{
+  background-color: #7059DB;
 }
 
-.App-link {
-  color: #61dafb;
+.title-text{
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sm-title-text{
+  font-size: 16px;
 }
+
+.xs-title-text{
+  font-size: 13px;
+}
+
+ .plus{
+   color: #4CC88A;
+
+ }
+ 
+ .minus{
+   color: #EA4E49;
+ }
+
+ .text-purple{
+  color: #7059DB;
+}
+
+.bg-purple{
+  color: #7059DB;
+}
+
+.text-yellow{
+  color: #FFCE00;
+}
+
+.btn-outline-purple{
+  border: 2px solid #7059DB;
+  border-radius: 5px;
+  color: #7059DB;
+  font-weight: 700;
+}
+
+.btn-outline-purple:hover{
+  background-color: #7059DB;
+  color: #fff;
+}
+
+.lg-text{
+  font-size: 40px;
+}
+
+ #menu-add-run-button{
+   bottom: 42px;
+   left: 50%;
+   transform: translate(-50%);
+ }
+
+ .footer{
+   height: 75px;
+ }
+
+ #run-log{
+   height: 50vh; 
+   min-width: 400px;
+   overflow-y: auto;
+ }
