@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle, faCalendarAlt, faList, faTrophy, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 export const Footer = () => {
   return (

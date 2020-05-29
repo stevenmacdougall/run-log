@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   return (
     <GlobalProvider>
-      <Router>
+      <Router basename={"/run-log"}>
       <Container fluid>
         <Header />
         <Route path="/" exact component={Goal} />
