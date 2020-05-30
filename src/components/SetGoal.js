@@ -31,20 +31,20 @@ export const SetGoal = () => {
     return (
       <>
       <Row>
-        <Col className="mb-2">
-        <h2 className="font-weight-bold title-text d-inline mb-">Enter Goal</h2>
-        </Col>
-      </Row>
-      <Row>
         <Col>  
-        <Card className="p-3">
-        <form onSubmit={onSubmit} className="bg-white">  
-          <div className="form-control border-0">
-            <label className="mr-3 font-weight-bold" htmlFor="distance">Goal</label>
-            <input type="number" value={distance} onChange={(e) => setDistance(e.target.value)} placeholder="Enter time..." /><span className="font-weight-bold text-secondary ml-2">Km</span>
-          </div>
-          <Button onClick={onSubmit} variant="btn btn-outline-purple mt-3">Save</Button>
-        </form>
+        <Card>
+          <Card.Header className="p-4">
+          <h3 className="font-weight-bold title-text">Set Goal</h3>
+          </Card.Header>
+          <Card.Body className="p-4 bg-white">
+          <form onSubmit={onSubmit}>  
+            <div className="form-control border-0">
+              <label className="mr-3 font-weight-bold" htmlFor="distance">Distance</label>
+              <input className="sm-input" type="number" value={distance} onChange={(e) => setDistance(e.target.value)} placeholder="Ex. 30" /><span className="font-weight-bold text-secondary ml-2">Km</span>
+            </div>
+            <Button onClick={onSubmit} variant="btn btn-outline-purple mt-5 mt-sm-3">Save</Button>
+          </form>
+        </Card.Body>
         </Card>
         </Col>
       </Row>

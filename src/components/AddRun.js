@@ -41,19 +41,17 @@ export const AddRun = () => {
         <Col>
         <Card>
         <Card.Header className="p-4">
-        <h3 className="font-weight-bold title-text"><FontAwesomeIcon className="fa-2x text-dark d-inline mr-1" icon={faRunning} /> Run Details</h3>
+        <h3 className="font-weight-bold title-text"><FontAwesomeIcon className="fa-lg text-dark d-inline mr-1" icon={faRunning} /> Run Details</h3>
         </Card.Header>
         <Card.Body className="p-4">
-          <form onSubmit={onSubmit} className="bg-white">  
-          <div className="form-control border-0">
+        <form onSubmit={onSubmit} className="bg-white">  
             <label htmlFor="text" className="mr-2">Description</label>
             <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Ex. Evening Run June 8th" />
-          </div>
-          <div className="form-control border-0">
+            <br></br>
+            <br></br>
             <label htmlFor="distance" className="mr-2">Distance</label>
-            <input type="number" value={distance} onChange={(e) => setDistance(e.target.value)} placeholder="Ex. 5" /> <span>Km</span>
-          </div>
-          </form>
+            <input className="sm-input" type="number" value={distance} onChange={(e) => setDistance(e.target.value)} placeholder="Ex. 5" /> <span>Km</span>
+        </form>
         </Card.Body> 
         <Card.Footer className="p-4">
           <Button onClick={onSubmit} variant="btn btn-outline-purple" className="mt-3">Add Run</Button>
