@@ -1,4 +1,17 @@
+## Set-up
+
+React app prototype that let's you set goals and log runs.
+
+Demo URL:
+https://stevenmacdougall.github.io/run-log/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Set-up
+```npx create-react-app run-log```<br />
+```npm install --save react-router-dom```<br />
+```npm install react-bootstrap bootstrap```<br />
+```npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome```<br />
 
 ## Available Scripts
 
