@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Goal } from './components/Goal';
 import { SetGoal } from './components/SetGoal';
-import { IncomeExpenses } from './components/IncomeExpenses';
+import { CompletedRemaining } from './components/CompletedRemaining';
 import { AddRun } from './components/AddRun';
 import { RunList } from './components/RunList';
 import { Footer } from './components/Footer';
@@ -23,7 +23,7 @@ function App() {
         <Header />
         <Route path="/" exact component={Goal} />
         <Route path="/set-goal" exact component={SetGoal} />
-        <Route path="/" exact component={IncomeExpenses} />
+        <Route path="/" exact component={CompletedRemaining} />
         <Route path="/add-run" exact component={AddRun} />
         <Route path="/" exact component={RunList} />
         <Route path="/" exact component={Footer} />

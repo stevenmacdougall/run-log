@@ -6,7 +6,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faRunning } from '@fortawesome/free-solid-svg-icons';
 
-export const IncomeExpenses = () => {
+export const CompletedRemaining = () => {
   const { runs } = useContext(GlobalContext);
   const { goals } = useContext(GlobalContext);
 
