@@ -1,4 +1,4 @@
-## Set-up
+## About
 
 React app prototype that let's you set goals and log runs.
 
